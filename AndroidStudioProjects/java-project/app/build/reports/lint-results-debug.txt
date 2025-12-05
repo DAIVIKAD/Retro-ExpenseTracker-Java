@@ -1,0 +1,712 @@
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/utils/AsciiHelper.java:16: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        bar.append(String.format("%03d", clamped)).append("%");
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.ROOT) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:14: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 34
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdkVersion specifies that it has been tested with,
+   various compatibility modes kick in. This ensures that your application
+   continues to work, but it may look out of place. For example, if the
+   targetSdkVersion is less than 14, your app may get an option button in the
+   UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:17: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialCode from androidx.appcompat]
+    private Switch soundEffectsSwitch, notificationsSwitch;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:17: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialCode from androidx.appcompat]
+    private Switch soundEffectsSwitch, notificationsSwitch;
+                                       ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseSwitchCompatOrMaterialCode":
+   Use SwitchCompat from AppCompat or SwitchMaterial from Material library
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=460343
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:126: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialXml from androidx.appcompat]
+            <Switch
+            ^
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:151: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialXml from androidx.appcompat]
+            <Switch
+            ^
+
+   Explanation for issues of type "UseSwitchCompatOrMaterialXml":
+   Use SwitchCompat from AppCompat or SwitchMaterial from Material library
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=460343
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/wrapper/gradle-wrapper.properties:4: Warning: A newer version of Gradle than 8.13 is available: 8.14.3 [AndroidGradlePluginVersion]
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.13-bin.zip
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:8: Warning: A newer version of compileSdkVersion than 34 is available: 36 [GradleDependency]
+    compileSdk 34
+    ~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/libs.versions.toml:4: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0 [GradleDependency]
+junitVersion = "1.1.5"
+               ~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/libs.versions.toml:5: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0 [GradleDependency]
+espressoCore = "3.5.1"
+               ~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/libs.versions.toml:6: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+appcompat = "1.6.1"
+            ~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/libs.versions.toml:7: Warning: A newer version of com.google.android.material:material than 1.10.0 is available: 1.13.0 [GradleDependency]
+material = "1.10.0"
+           ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/libs.versions.toml:8: Warning: A newer version of androidx.activity:activity than 1.8.0 is available: 1.12.0 [GradleDependency]
+activity = "1.8.0"
+           ~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/gradle/libs.versions.toml:9: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+constraintlayout = "2.1.4"
+                   ~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:52: Warning: A newer version of com.google.code.gson:gson than 2.11.0 is available: 2.13.2 [NewerVersionAvailable]
+    implementation 'com.google.code.gson:gson:2.11.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/ui/NinjaOverlay.java:89: Warning: Unnecessary; SDK_INT is always >= 24 [ObsoleteSdkInt]
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/ui/NinjaOverlay.java:32: Warning: Do not place Android context classes in static fields (static reference to NinjaOverlay which has field overlayRoot pointing to FrameLayout); this is a memory leak [StaticFieldLeak]
+    private static NinjaOverlay instance;
+            ~~~~~~
+
+   Explanation for issues of type "StaticFieldLeak":
+   A static field will leak contexts.
+
+   Non-static inner classes have an implicit reference to their outer class.
+   If that outer class is for example a Fragment or Activity, then this
+   reference means that the long-running handler/loader/task will hold a
+   reference to the activity which prevents it from getting garbage
+   collected.
+
+   Similarly, direct field references to activities and fragments from these
+   longer running instances can cause leaks.
+
+   ViewModel classes should never point to Views or non-application Contexts.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:5: Warning: Possible overdraw: Root element paints background #000000 with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="#000000"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_dashboard.xml:6: Warning: Possible overdraw: Root element paints background @color/terminal_black with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="@color/terminal_black">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_expense_list.xml:7: Warning: Possible overdraw: Root element paints background @color/terminal_black with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="@color/terminal_black">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:7: Warning: Possible overdraw: Root element paints background @color/terminal_black with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="@color/terminal_black">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_login.xml:7: Warning: Possible overdraw: Root element paints background @color/terminal_black with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="@color/terminal_black">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:5: Warning: Possible overdraw: Root element paints background #000000 with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="#000000"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:5: Warning: Possible overdraw: Root element paints background #000000 with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="#000000"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_splash.xml:5: Warning: Possible overdraw: Root element paints background @color/terminal_black with a theme that also paints a background (inferred theme is @style/Theme.RetroExpense) [Overdraw]
+    android:background="@color/terminal_black"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_main.xml:2: Warning: The resource R.layout.activity_main appears to be unused [UnusedResources]
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/colors.xml:3: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#FF000000</color>
+           ~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/colors.xml:4: Warning: The resource R.color.white appears to be unused [UnusedResources]
+    <color name="white">#FFFFFFFF</color>
+           ~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/colors.xml:10: Warning: The resource R.color.terminal_red appears to be unused [UnusedResources]
+    <color name="terminal_red">#FF0000</color>
+           ~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/colors.xml:11: Warning: The resource R.color.terminal_yellow appears to be unused [UnusedResources]
+    <color name="terminal_yellow">#FFFF00</color>
+           ~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/colors.xml:12: Warning: The resource R.color.terminal_overlay appears to be unused [UnusedResources]
+    <color name="terminal_overlay">#CC000000</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:17: Warning: The resource R.string.today_label appears to be unused [UnusedResources]
+    <string name="today_label">TODAY EXPENSES:</string>
+            ~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:18: Warning: The resource R.string.month_label appears to be unused [UnusedResources]
+    <string name="month_label">MONTHLY TOTAL:</string>
+            ~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:58: Warning: The resource R.string.hacker_unlock_command appears to be unused [UnusedResources]
+    <string name="hacker_unlock_command">unlock -x</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:59: Warning: The resource R.string.trace_command appears to be unused [UnusedResources]
+    <string name="trace_command">trace expenses</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:60: Warning: The resource R.string.sync_command appears to be unused [UnusedResources]
+    <string name="sync_command">sync now</string>
+            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:36: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="ninja_loading_scanning">NINJA ▸ CRUNCHING DATA...</string>
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "TypographyEllipsis":
+   You can replace the string "..." with a dedicated ellipsis character,
+   ellipsis character (u2026, &#8230;). This can help make the text more
+   readable.
+
+   https://en.wikipedia.org/wiki/Ellipsis
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:100: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+            <Button
+             ~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:112: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+            <Button
+             ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:66: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:28: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:45: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:63: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:81: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:143: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:59: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:98: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:167: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SmallSp":
+   Avoid using sizes smaller than 11sp.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:48: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:66: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:84: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_login.xml:20: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_login.xml:28: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:32: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:72: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/values/strings.xml:68: Warning: The standard Android way to capitalize CANCEL is "Cancel" (tip: use @android:string/cancel instead) [ButtonCase]
+    <string name="custom_category_negative">CANCEL</string>
+                                            ~~~~~~
+
+   Explanation for issues of type "ButtonCase":
+   The standard capitalization for OK/Cancel dialogs is "OK" and "Cancel". To
+   ensure that your dialogs use the standard strings, you can use the resource
+   strings @android:string/ok and @android:string/cancel.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:41: Warning: Use version catalog instead [UseTomlInstead]
+    implementation platform('com.google.firebase:firebase-bom:34.6.0')
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:44: Warning: Use version catalog instead [UseTomlInstead]
+    implementation 'com.google.firebase:firebase-analytics'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:45: Warning: Use version catalog instead [UseTomlInstead]
+    implementation 'com.google.firebase:firebase-auth'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:46: Warning: Use version catalog instead [UseTomlInstead]
+    implementation 'com.google.firebase:firebase-firestore'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:49: Warning: Use version catalog instead [UseTomlInstead]
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/build.gradle:52: Warning: Use version catalog instead [UseTomlInstead]
+    implementation 'com.google.code.gson:gson:2.11.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:72: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+            android:clickable="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "KeyboardInaccessibleWidget":
+   A widget that is declared to be clickable but not declared to be focusable
+   is not accessible via the keyboard. Please add the focusable attribute as
+   well.
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:136: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: LOGIN REQUIRED");
+                               ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:143: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: AMOUNT REQUIRED");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:151: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: INVALID AMOUNT");
+                               ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:156: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: AMOUNT MUST BE > 0");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:161: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusText.setText("UPLOADING...");
+                           ~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:175: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusText.setText("EXPENSE SAVED");
+                           ~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:188: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        statusText.setText("OFFLINE MODE. QUEUED (" + message + ")");
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/AddExpenseActivity.java:188: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusText.setText("OFFLINE MODE. QUEUED (" + message + ")");
+                           ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:135: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        todayTotalText.setText("TODAY: LOADING...");
+                               ~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:136: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        monthTotalText.setText("MONTH: LOADING...");
+                               ~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:152: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        todayTotalText.setText("TODAY: " + currencyFormat.format(todayTotal));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:152: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        todayTotalText.setText("TODAY: " + currencyFormat.format(todayTotal));
+                               ~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:153: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        monthTotalText.setText("MONTH: " + currencyFormat.format(monthTotal));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:153: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        monthTotalText.setText("MONTH: " + currencyFormat.format(monthTotal));
+                               ~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:163: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        pendingStatusText.setText("SYNCING ▸ " + pending);
+                                  ~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:163: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        pendingStatusText.setText("SYNCING ▸ " + pending);
+                                  ~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:169: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    pendingStatusText.setText("SYNC COMPLETE ▸ " + successCount + "/" + totalCount);
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:169: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    pendingStatusText.setText("SYNC COMPLETE ▸ " + successCount + "/" + totalCount);
+                                              ~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/DashboardActivity.java:234: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        pendingStatusText.setText(getString(R.string.pending_panel_offline) + " • " + formatPendingLabel(cacheManager.getPendingCount()));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/ExpenseListActivity.java:53: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("LOGIN REQUIRED TO VIEW EXPENSES");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/ExpenseListActivity.java:59: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusText.setText("FETCHING EXPENSES...");
+                           ~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/ExpenseListActivity.java:87: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    statusText.setText("OFFLINE MODE • SHOWING CACHED DATA (" + cached.size() + ")");
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/ExpenseListActivity.java:87: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    statusText.setText("OFFLINE MODE • SHOWING CACHED DATA (" + cached.size() + ")");
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/HackerModeActivity.java:43: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusLine.setText("INITIATING MATRIX STREAM...");
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/HackerModeActivity.java:49: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusLine.setText("SYNCING OFFLINE QUEUE...");
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/HackerModeActivity.java:54: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            statusLine.setText("SYNC RESULT " + successCount + "/" + totalCount);
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/HackerModeActivity.java:54: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusLine.setText("SYNC RESULT " + successCount + "/" + totalCount);
+                               ~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/HackerModeActivity.java:63: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        pendingLine.setText("QUEUE SIZE: " + cacheManager.getPendingCount());
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/HackerModeActivity.java:63: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        pendingLine.setText("QUEUE SIZE: " + cacheManager.getPendingCount());
+                            ~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/LoginActivity.java:50: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: EMAIL AND PASSWORD REQUIRED");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/LoginActivity.java:55: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: PASSWORD MUST BE 6+ CHARACTERS");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/LoginActivity.java:81: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            statusText.setText(prefix + (error != null ? error.getMessage() : "UNKNOWN ERROR"));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/PinLockActivity.java:72: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusText.setText("ENTER PIN");
+                           ~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/PinLockActivity.java:89: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ACCESS GRANTED");
+                               ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/PinLockActivity.java:95: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ACCESS DENIED");
+                               ~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:68: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: PIN MUST BE 4 DIGITS");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:73: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusText.setText("PIN SAVED SUCCESSFULLY");
+                           ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:77: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                statusText.setText("SETTINGS"), 2000);
+                                   ~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:84: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: BUDGET REQUIRED");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:91: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            statusText.setText("BUDGET SAVED: $" + budget);
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:91: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("BUDGET SAVED: $" + budget);
+                               ~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:94: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    statusText.setText("SETTINGS"), 2000);
+                                       ~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/java/com/retroexpense/app/SettingsActivity.java:96: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("ERROR: INVALID BUDGET FORMAT");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:16: Warning: Hardcoded string "╔═══════════════════════════════╗n║   NEW EXPENSE ENTRY           ║n╚═══════════════════════════════╝", should use @string resource [HardcodedText]
+            android:text="╔═══════════════════════════════╗\n║   NEW EXPENSE ENTRY           ║\n╚═══════════════════════════════╝"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:25: Warning: Hardcoded string ">>> CATEGORY", should use @string resource [HardcodedText]
+            android:text=">>> CATEGORY"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:42: Warning: Hardcoded string ">>> AMOUNT", should use @string resource [HardcodedText]
+            android:text=">>> AMOUNT"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:53: Warning: Hardcoded string "0.00", should use @string resource [HardcodedText]
+            android:hint="0.00"
+            ~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:60: Warning: Hardcoded string ">>> DATE", should use @string resource [HardcodedText]
+            android:text=">>> DATE"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:78: Warning: Hardcoded string ">>> NOTE (OPTIONAL)", should use @string resource [HardcodedText]
+            android:text=">>> NOTE (OPTIONAL)"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_add_expense.xml:89: Warning: Hardcoded string "Description...", should use @string resource [HardcodedText]
+            android:hint="Description..."
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:12: Warning: Hardcoded string "╔═══════════════════════════════╗n║   HACKER MODE TERMINAL       ║n╚═══════════════════════════════╝", should use @string resource [HardcodedText]
+        android:text="╔═══════════════════════════════╗\n║   HACKER MODE TERMINAL       ║\n╚═══════════════════════════════╝"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:23: Warning: Hardcoded string "READY", should use @string resource [HardcodedText]
+        android:text="READY"
+        ~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:33: Warning: Hardcoded string "QUEUE SIZE: 0", should use @string resource [HardcodedText]
+        android:text="QUEUE SIZE: 0"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:60: Warning: Hardcoded string "[ START MATRIX ]", should use @string resource [HardcodedText]
+        android:text="[ START MATRIX ]" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:67: Warning: Hardcoded string "[ FORCE SYNC ]", should use @string resource [HardcodedText]
+        android:text="[ FORCE SYNC ]" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_hacker_mode.xml:74: Warning: Hardcoded string "[ EXIT TERMINAL ]", should use @string resource [HardcodedText]
+        android:text="[ EXIT TERMINAL ]" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:13: Warning: Hardcoded string "╔═══════════════════════════════╗n║   SECURITY CHECKPOINT         ║n║   ENTER ACCESS CODE           ║n╚═══════════════════════════════╝", should use @string resource [HardcodedText]
+        android:text="╔═══════════════════════════════╗\n║   SECURITY CHECKPOINT         ║\n║   ENTER ACCESS CODE           ║\n╚═══════════════════════════════╝"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:23: Warning: Hardcoded string "░ ░ ░ ░", should use @string resource [HardcodedText]
+        android:text="░ ░ ░ ░"
+        ~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:34: Warning: Hardcoded string "ENTER PIN", should use @string resource [HardcodedText]
+        android:text="ENTER PIN"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:51: Warning: Hardcoded string "1", should use @string resource [HardcodedText]
+            android:text="1"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:62: Warning: Hardcoded string "2", should use @string resource [HardcodedText]
+            android:text="2"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:73: Warning: Hardcoded string "3", should use @string resource [HardcodedText]
+            android:text="3"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:84: Warning: Hardcoded string "4", should use @string resource [HardcodedText]
+            android:text="4"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:95: Warning: Hardcoded string "5", should use @string resource [HardcodedText]
+            android:text="5"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:106: Warning: Hardcoded string "6", should use @string resource [HardcodedText]
+            android:text="6"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:117: Warning: Hardcoded string "7", should use @string resource [HardcodedText]
+            android:text="7"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:128: Warning: Hardcoded string "8", should use @string resource [HardcodedText]
+            android:text="8"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:139: Warning: Hardcoded string "9", should use @string resource [HardcodedText]
+            android:text="9"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:150: Warning: Hardcoded string "CLR", should use @string resource [HardcodedText]
+            android:text="CLR"
+            ~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:161: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+            android:text="0"
+            ~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_pin_lock.xml:172: Warning: Hardcoded string "DEL", should use @string resource [HardcodedText]
+            android:text="DEL"
+            ~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:16: Warning: Hardcoded string "╔═══════════════════════════════╗n║   SYSTEM CONFIGURATION        ║n╚═══════════════════════════════╝", should use @string resource [HardcodedText]
+            android:text="╔═══════════════════════════════╗\n║   SYSTEM CONFIGURATION        ║\n╚═══════════════════════════════╝"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:26: Warning: Hardcoded string ">>> SECURITY PIN", should use @string resource [HardcodedText]
+            android:text=">>> SECURITY PIN"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:37: Warning: Hardcoded string "Enter 4-digit PIN", should use @string resource [HardcodedText]
+            android:hint="Enter 4-digit PIN"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:46: Warning: Hardcoded string "[ SAVE PIN ]", should use @string resource [HardcodedText]
+            android:text="[ SAVE PIN ]"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:56: Warning: Hardcoded string "════════════════════════════════", should use @string resource [HardcodedText]
+            android:text="════════════════════════════════"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:66: Warning: Hardcoded string ">>> MONTHLY BUDGET", should use @string resource [HardcodedText]
+            android:text=">>> MONTHLY BUDGET"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:77: Warning: Hardcoded string "Enter monthly budget", should use @string resource [HardcodedText]
+            android:hint="Enter monthly budget"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:85: Warning: Hardcoded string "[ SAVE BUDGET ]", should use @string resource [HardcodedText]
+            android:text="[ SAVE BUDGET ]"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:95: Warning: Hardcoded string "════════════════════════════════", should use @string resource [HardcodedText]
+            android:text="════════════════════════════════"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:105: Warning: Hardcoded string ">>> PREFERENCES", should use @string resource [HardcodedText]
+            android:text=">>> PREFERENCES"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:121: Warning: Hardcoded string "SOUND EFFECTS", should use @string resource [HardcodedText]
+                android:text="SOUND EFFECTS"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:146: Warning: Hardcoded string "NOTIFICATIONS", should use @string resource [HardcodedText]
+                android:text="NOTIFICATIONS"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:164: Warning: Hardcoded string "════════════════════════════════", should use @string resource [HardcodedText]
+            android:text="════════════════════════════════"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:174: Warning: Hardcoded string "[ LOGOUT ]", should use @string resource [HardcodedText]
+            android:text="[ LOGOUT ]"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_settings.xml:185: Warning: Hardcoded string "SETTINGS", should use @string resource [HardcodedText]
+            android:text="SETTINGS"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/daivikad/AndroidStudioProjects/RetroExpense/app/src/main/res/layout/activity_splash.xml:25: Warning: Hardcoded string "[░░░░░░░░░░]", should use @string resource [HardcodedText]
+        android:text="[░░░░░░░░░░]" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 150 warnings

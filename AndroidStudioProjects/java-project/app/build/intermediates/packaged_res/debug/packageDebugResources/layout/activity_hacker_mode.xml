@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/terminal_black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="╔═══════════════════════════════╗\n║   HACKER MODE TERMINAL       ║\n╚═══════════════════════════════╝"
+        android:fontFamily="monospace"
+        android:textColor="@color/terminal_green_bright"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/status_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="READY"
+        android:fontFamily="monospace"
+        android:textColor="@color/terminal_green"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/pending_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUEUE SIZE: 0"
+        android:fontFamily="monospace"
+        android:textColor="@color/terminal_green"
+        android:textSize="12sp"
+        android:layout_marginBottom="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/terminal_border"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/matrix_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/terminal_green"
+            android:fontFamily="monospace"
+            android:textSize="12sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_start_matrix"
+        style="@style/TerminalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[ START MATRIX ]" />
+
+    <Button
+        android:id="@+id/btn_sync_matrix"
+        style="@style/TerminalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[ FORCE SYNC ]" />
+
+    <Button
+        android:id="@+id/btn_exit_matrix"
+        style="@style/TerminalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[ EXIT TERMINAL ]" />
+
+</LinearLayout>
+
+

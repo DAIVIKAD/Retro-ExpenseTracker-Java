@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_expense_list.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_expense_list.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/xml_backup_rules.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.retroexpense.app-debug-46:/layout_activity_savings_list.xml.flat",
+        "source": "com.retroexpense.app-main-48:/layout/activity_savings_list.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_main.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_list_item_expense.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/list_item_expense.xml"
+    },
+    {
+        "merged": "com.retroexpense.app-debug-46:/layout_activity_add_saving.xml.flat",
+        "source": "com.retroexpense.app-main-48:/layout/activity_add_saving.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_settings.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_spinner_item.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_dashboard.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_add_expense.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_add_expense.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_hacker_mode.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_hacker_mode.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_ic_retro_ninja.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/ic_retro_ninja.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_ninja_badge_bg.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/ninja_badge_bg.xml"
+    },
+    {
+        "merged": "com.retroexpense.app-debug-46:/layout_activity_dashboard.xml.flat",
+        "source": "com.retroexpense.app-main-48:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.retroexpense.app-debug-46:/layout_list_item_saving.xml.flat",
+        "source": "com.retroexpense.app-main-48:/layout/list_item_saving.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.retroexpense.app-debug-46:/layout_dialog_edit_transaction.xml.flat",
+        "source": "com.retroexpense.app-main-48:/layout/dialog_edit_transaction.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_terminal_button.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/terminal_button.xml"
+    },
+    {
+        "merged": "com.retroexpense.app-debug-46:/layout_list_item_expense.xml.flat",
+        "source": "com.retroexpense.app-main-48:/layout/list_item_expense.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_pin_lock.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_pin_lock.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_retro_input_bg.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/retro_input_bg.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_login.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_terminal_border.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/terminal_border.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/layout_activity_splash.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/drawable_retro_button_bg.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/drawable/retro_button_bg.xml"
+    },
+    {
+        "merged": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-debug-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/daivikad/.gradle/daemon/8.13/com.retroexpense.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
+    }
+]
