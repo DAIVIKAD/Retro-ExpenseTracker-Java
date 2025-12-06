@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/terminal_black">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        android:textColor="@color/terminal_green"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/email_input"
+        style="@style/TerminalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_input"
+        style="@style/TerminalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/TerminalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button" />
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/TerminalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        style="@style/TerminalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ready_status"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base terminal text -->
+    <style name="TerminalText">
+        <item name="android:textColor">@color/terminal_green</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TerminalText.Large">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TerminalText.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/terminal_green_bright</item>
+    </style>
+
+    <style name="TerminalButton">
+        <item name="android:background">@drawable/terminal_button</item>
+        <item name="android:textColor">@color/terminal_green_bright</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TerminalEditText">
+        <item name="android:background">@drawable/terminal_border</item>
+        <item name="android:textColor">@color/terminal_green</item>
+        <item name="android:textColorHint">@color/terminal_green_dim</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="TerminalPanel">
+        <item name="android:background">@drawable/terminal_border</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="╔═══════════════════════════════╗\n║   SYSTEM CONFIGURATION        ║\n╚═══════════════════════════════╝"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- PIN Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">>> SECURITY PIN"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/pin_input"
+            style="@style/TerminalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter 4-digit PIN"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/save_pin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ SAVE PIN ]"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:background="@drawable/retro_button_bg"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="════════════════════════════════"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="10sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Budget Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">>> MONTHLY BUDGET"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/budget_input"
+            style="@style/TerminalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter monthly budget"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/save_budget_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ SAVE BUDGET ]"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:background="@drawable/retro_button_bg"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="════════════════════════════════"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="10sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Preferences Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">>> PREFERENCES"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SOUND EFFECTS"
+                android:fontFamily="monospace"
+                android:textColor="#00FF00"
+                android:textSize="12sp"/>
+
+            <Switch
+                android:id="@+id/sound_effects_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:thumbTint="#00FF00"
+                android:trackTint="#006600"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NOTIFICATIONS"
+                android:fontFamily="monospace"
+                android:textColor="#00FF00"
+                android:textSize="12sp"/>
+
+            <Switch
+                android:id="@+id/notifications_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:thumbTint="#00FF00"
+                android:trackTint="#006600"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="════════════════════════════════"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="10sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ LOGOUT ]"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:background="@drawable/retro_button_bg"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:fontFamily="monospace"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>
