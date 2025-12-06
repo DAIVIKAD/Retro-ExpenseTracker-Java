@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "136360552266",
+    "project_id": "retroexpense-31921",
+    "storage_bucket": "retroexpense-31921.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136360552266:android:ae0d7dd9672791211d03b3",
+        "android_client_info": {
+          "package_name": "com.retroexpense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpKjTv4ac2GKmIvau9trIQdx-q_C5Syr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136360552266:android:4159f8fe5d41269c1d03b3",
+        "android_client_info": {
+          "package_name": "com.retroexpense.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpKjTv4ac2GKmIvau9trIQdx-q_C5Syr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

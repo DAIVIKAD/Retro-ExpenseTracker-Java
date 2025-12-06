@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/terminal_black"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_saving_title"
+            android:textColor="@color/terminal_green"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/savings_amount_label"
+            android:textColor="@color/terminal_green"
+            android:fontFamily="monospace"
+            android:textSize="10sp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/amount_input"
+            style="@style/TerminalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">>> DATE"
+            android:textColor="@color/terminal_green"
+            android:fontFamily="monospace"
+            android:textSize="10sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/date_input"
+            style="@style/TerminalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/savings_note_label"
+            android:textColor="@color/terminal_green"
+            android:fontFamily="monospace"
+            android:textSize="10sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/note_input"
+            style="@style/TerminalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/save_btn"
+                style="@style/TerminalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save_button" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="@style/TerminalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel_button" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ready_status"
+            android:textColor="@color/terminal_green"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

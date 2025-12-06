@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.RetroExpense" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/terminal_black</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/terminal_green</item>
+        <item name="colorPrimary">@color/terminal_green</item>
+        <item name="colorSecondary">@color/terminal_green_bright</item>
+        <item name="colorOnPrimary">@color/terminal_black</item>
+    </style>
+</resources>
