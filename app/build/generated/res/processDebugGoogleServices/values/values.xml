@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">136360552266</string>
-    <string name="google_api_key" translatable="false">AIzaSyCpKjTv4ac2GKmIvau9trIQdx-q_C5Syr4</string>
-    <string name="google_app_id" translatable="false">1:136360552266:android:4159f8fe5d41269c1d03b3</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCpKjTv4ac2GKmIvau9trIQdx-q_C5Syr4</string>
-    <string name="google_storage_bucket" translatable="false">retroexpense-31921.firebasestorage.app</string>
-    <string name="project_id" translatable="false">retroexpense-31921</string>
-</resources>

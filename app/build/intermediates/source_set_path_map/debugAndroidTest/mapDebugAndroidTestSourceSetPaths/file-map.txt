@@ -1,7 +1,0 @@
-com.retroexpense.app.test.app-core-1.5.0-0 /Users/daivikad/.gradle/caches/8.13/transforms/4564e4fc8a27b393652d535d517e11e7/transformed/core-1.5.0/res
-com.retroexpense.app.test.app-annotation-experimental-1.3.0-1 /Users/daivikad/.gradle/caches/8.13/transforms/ee122c0d54f7d9510ba6607bdc9cf7d6/transformed/annotation-experimental-1.3.0/res
-com.retroexpense.app.test.app-androidTest-2 /Users/daivikad/AndroidStudioProjects/RetroExpense/app/build/generated/res/resValues/androidTest/debug
-com.retroexpense.app.test.app-updated_navigation_xml-3 /Users/daivikad/AndroidStudioProjects/RetroExpense/app/build/generated/updated_navigation_xml/debugAndroidTest
-com.retroexpense.app.test.app-mergeDebugAndroidTestResources-4 /Users/daivikad/AndroidStudioProjects/RetroExpense/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.retroexpense.app.test.app-mergeDebugAndroidTestResources-5 /Users/daivikad/AndroidStudioProjects/RetroExpense/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.retroexpense.app.test.app-debugAndroidTest-6 /Users/daivikad/AndroidStudioProjects/RetroExpense/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
